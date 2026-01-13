@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivisnails | Spa de Uñas Exclusivo</title>
+    
+    <!-- Fuentes Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- stylos.css -->
+     <link rel="stylesheet" href="css/styles.css">
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+
+    <!-- CANVAS DE PARTÍCULAS (FONDO) -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- NUEVO HEADER -->
+    <header>
+        <nav>
+            <div class="brand-container">
+                <div class="logo-main">
+                    <i class=""><img src="img/img.png" alt="Logo Vivisnails" class="logo-img"></i> VIVIS NAIL'S
+                </div>
+                <!-- <span class="logo-sub">•Uñas que hablan por ti</span> -->
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link">Inicio</a></li>
+                <li><a href="#services" class="nav-link">Servicios</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonios</a></li>
+                <li>
+                    <a href="https://wa.me/573016848410" class="btn-header-cta" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar
+                    </a>
+                </li>
+            </ul>
+
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- NUEVO HERO -->
+    <section id="hero">
+        <div class="hero-shape shape-1"></div>
+        <div class="hero-shape shape-2"></div>
+
+        <div class="hero-content"><br>
+            <span class="hero-slogan-top">Bienvenid@s a Vivisnail's</span>
+            
+            <h1 class="hero-title">
+                Donde la belleza <br>
+                <span>se transforma en arte</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                Detalles que enamoran, belleza que inspira. Cuidado premium para manos y pies, pensado para ti.
+            </p>
+
+            <a href="#services" class="btn-hero-main">Ver Servicios</a>
+        </div>
+    </section>
+
+    <!-- SERVICIOS GLASSMORPHISM -->
+    <section id="services">
+        <div class="section-header">
+            <h2>Nuestros Servicios</h2>
+            <p>Desliza para ver el efecto de luz</p>
+        </div>
+
+        <div class="grid-container">
+            <!-- 1 -->
+            <div class="glass-card card animate-on-scroll" data-animate="animate__zoomInUp">
+                <div class="mouse-glow"></div>
+                <div class="card-number">01</div>
+                <div class="card-img-container">
+                    <img src="https://picsum.photos/seed/manicure1/500/400" alt="Manicure">
+                </div>
+                <div class="card-content">  
+                    <div>
+                        <h3>Manicure Tradicional</h3>
+                        <p>Cuidado esencial, corte perfecto e hidratación.</p>
+                    </div>
+                    <button onclick="contact('Manicure Tradicional')" class="btn-glass">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="glass-card card animate-on-scroll" data-animate="animate__zoomInUp">
+                <div class="mouse-glow"></div>
+                <div class="card-number">02</div>
+                <div class="card-img-container">
+                    <img src="https://picsum.photos/seed/pedi1/500/400" alt="Pedicura">
+                </div>
+                <div class="card-content">
+                    <div>
+                        <h3>Pedicura Tradicional</h3>
+                        <p>Relajación absoluta, exfoliación y esmaltado.</p>
+                    </div>
+                    <button onclick="contact('Pedicura Tradicional')" class="btn-glass">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar
+                    </button>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="glass-card card animate-on-scroll" data-animate="animate__zoomInUp">
+                <div class="mouse-glow"></div>
+                <div class="card-number">03</div>
+                <div class="card-img-container">
+                    <img src="https://picsum.photos/seed/semipermanente/500/400" alt="Semipermanente">
+                </div>
+                <div class="card-content">
+                    <div>
+                        <h3>Semipermanente Manos</h3>
+                        <p>Brillo intenso y duración de hasta 3 semanas.</p>
+                    </div>
+                    <button onclick="contact('Semipermanente Manos')" class="btn-glass">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar
+                    </button>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="glass-card card animate-on-scroll" data-animate="animate__zoomInUp">
+                <div class="mouse-glow"></div>
+                <div class="card-number">04</div>
+                <div class="card-img-container">
+                    <img src="https://picsum.photos/seed/feetnails/500/400" alt="Pies">
+                </div>
+                <div class="card-content">
+                    <div>
+                        <h3>Semipermanente Pies</h3>
+                        <p>Colores vibrantes y resistentes al agua.</p>
+                    </div>
+                    <button onclick="contact('Semipermanente Pies')" class="btn-glass">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar
+                    </button>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="glass-card card animate-on-scroll" data-animate="animate__zoomInUp">
+                <div class="mouse-glow"></div>
+                <div class="card-number">05</div>
+                <div class="card-img-container">
+                    <img src="https://picsum.photos/seed/presson/500/400" alt="Press-on">
+                </div>
+                <div class="card-content">
+                    <div>
+                        <h3>Uñas Press-on</h3>
+                        <p>Diseños instantáneos, reutilizables y ligeras.</p>
+                    </div>
+                    <button onclick="contact('Press-on')" class="btn-glass">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar
+                    </button>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="glass-card card animate-on-scroll" data-animate="animate__zoomInUp">
+                <div class="mouse-glow"></div>
+                <div class="card-number">06</div>
+                <div class="card-img-container">
+                    <img src="https://picsum.photos/seed/dipping/500/400" alt="Dipping">
+                </div>
+                <div class="card-content">
+                    <div>
+                        <h3>Dipping Powder</h3>
+                        <p>Resistencia superior y sensación ligera.</p>
+                    </div>
+                    <button onclick="contact('Dipping')" class="btn-glass">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar
+                    </button>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="glass-card card animate-on-scroll" data-animate="animate__zoomInUp">
+                <div class="mouse-glow"></div>
+                <div class="card-number">07</div>
+                <div class="card-img-container">
+                    <img src="https://picsum.photos/seed/rubber/500/400" alt="Rubber Base">
+                </div>
+                <div class="card-content">
+                    <div>
+                        <h3>Rubber Base</h3>
+                        <p>Nivelación perfecta y fortalecimiento extremo.</p>
+                    </div>
+                    <button onclick="contact('Recubrimiento Rubber Base')" class="btn-glass">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- TESTIMONIOS / EXPERIENCIAS (NUEVO) -->
+    <section id="testimonials">
+        <div class="section-header">
+            <h2>Experiencias Reales</h2>
+            <p>Lo que dicen nuestras clientas</p>
+        </div>
+
+        <div class="slider-container">
+            <!-- Reseña 1 -->
+            <div class="testimonial-slide active">
+                <img src="img/WhatsApp Image 2025-12-12 at 21.36.15.jpeg" alt="Cliente" class="avatar">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div><br>
+                <p class="review-text">“Me encantó el manicure tradicional. Fue súper delicado, mis uñas quedaron limpias, bien cuidadas y con un acabado natural precioso. Se nota el amor en cada detalle.”</p>
+                <p class="client-name">María González</p>
+            </div>
+
+            <!-- Reseña 2 -->
+            <div class="testimonial-slide">
+                <img src="img/WhatsApp Image 2025-12-12 at 21.37.09.jpeg" alt="Cliente" class="avatar">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div><br>
+                <p class="review-text">“La pedicura fue totalmente relajante. Mis pies quedaron suaves, lindos y descansados. Salí con una sensación de frescura y bienestar que no había sentido antes.”</p>
+                <p class="client-name">Andrea Peña</p>
+            </div>
+
+            <!-- Reseña 3 -->
+            <div class="testimonial-slide">
+                <img src="img/WhatsApp Image 2025-12-12 at 21.37.37.jpeg" alt="Cliente" class="avatar">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div><br>
+                <p class="review-text">“El semipermanente en manos y pies fue perfecto. El color duró intacto por semanas, con un brillo hermoso. Ideal para quienes queremos uñas impecables sin preocuparnos.”</p>
+                <p class="client-name">Camila Silva</p>
+            </div>
+
+            <!-- Reseña 4 -->
+            <div class="testimonial-slide">
+                <img src="img/WhatsApp Image 2025-12-12 at 21.39.23.jpeg" alt="Cliente" class="avatar">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div><br>
+                <p class="review-text">“Probé las uñas press-on y quedé sorprendida, se ven súper naturales y elegantes. También el dipping me encantó: resistente, liviano y con un acabado muy prolijo.”</p>
+                <p class="client-name">Andrea Peña</p>
+            </div>
+
+            <!-- Reseña 5 -->
+            <div class="testimonial-slide">
+                <img src="img/q.jpg" alt="Cliente" class="avatar">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div><br>
+                <p class="review-text">“Tenía uñas débiles y el recubrimiento con base rubber fue la mejor decisión. Mis uñas quedaron más fuertes, con forma perfecta y un look elegante. Definitivamente lo recomiendo.”</p>
+                <p class="client-name">Camila Silva</p>
+            </div>
+            
+            <!-- Controles del Slider -->
+            <div class="slider-controls">
+                <div class="dot active" onclick="goToSlide(0)"></div>
+                <div class="dot" onclick="goToSlide(1)"></div>
+                <div class="dot" onclick="goToSlide(2)"></div>
+                <div class="dot" onclick="goToSlide(3)"></div>
+                <div class="dot" onclick="goToSlide(4)"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Ubicación</h4>
+                <p>Restrepo, Meta</p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <h4>Email</h4>
+                <p>chikis01carrion@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <h4>WhatsApp</h4>
+                <p>301 684 8410</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2023 Vivisnails. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/573016848410" class="float-wa" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    
+    <script src="script/script.js"></script>
+</body>
+</html>
